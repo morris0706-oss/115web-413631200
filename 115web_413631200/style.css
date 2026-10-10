@@ -1,0 +1,134 @@
+/* ==========================================
+   1 & 3. 基礎設定與背景色
+========================================== */
+/* 設定整個網頁的基本文字與背景 */
+body {
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  background-color: #f0f2f5; /* 頁面整體底色 */
+  color: #243447;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 設定頁首與頁尾的背景色與文字 */
+header,
+footer {
+  background-color: #234e70; /* 頁首、頁尾背景色 */
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+
+/* 設定主要內容區域 (main) 的背景色與容器 */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 32px;
+  background-color: #ffffff; /* 主要內容區域背景色 */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================
+   4. 設定標題、段落與連結的樣式
+========================================== */
+/* 標題樣式 */
+h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+h2 {
+  color: #234e70;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+/* 段落樣式 */
+p {
+  color: #334155;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* 連結樣式 */
+a {
+  color: #1d72b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0b4f8a;
+  text-decoration: underline;
+}
+
+/* ==========================================
+   5. 設定圖片寬度、圓角與表格框線
+========================================== */
+/* 圖片寬度與圓角 */
+img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px; /* 設定圓角 */
+  display: block;
+  margin: 12px 0;
+}
+
+/* 表格與框線樣式 */
+table {
+  width: 100%;
+  border-collapse: collapse; /* 合併相鄰邊框 */
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #234e70;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1; /* 設定表格框線 */
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* ==========================================
+   6. 使用 Flexbox 排列導覽列
+========================================== */
+nav {
+  display: flex;             /* 啟用 Flexbox */
+  justify-content: center;   /* 水平置中排列 */
+  gap: 20px;                 /* 項目間距 */
+  align-items: center;
+}
+
+/* 導覽列中的連結專用樣式 */
+nav a {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
